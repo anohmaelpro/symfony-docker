@@ -1,11 +1,21 @@
-version: '3'
-
+version: '3.7'
+networks:
+  frontend:
+    name: frontend
+    external: true
+  backend:
+    name: backend
+    internal: true
+    driver: bridge
 services:
 ###> doctrine/doctrine-bundle ###
   postgres:
     image: postgres:${POSTGRES_VERSION:-15}-alpine
-    ports:
+    container_name: postgres
+    expose:
       - "5432"
+    networks:
+      - backend
     environment:
       POSTGRES_DB: ${POSTGRES_DB:-symfony_docker_app}
       # You should definitely change the password in production
@@ -16,16 +26,48 @@ services:
       # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
       # - ./docker/db/data:/var/lib/postgresql/data:rw
 ###< doctrine/doctrine-bundle ###
+    restart: always
   pgadmin:
     image: dpage/pgadmin4:latest
+    container_name: pgadmin
     ports:
       - "55433:80"
     environment:
       PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-admin}
-
-
+    deploy:
+      restart_policy:
+        condition: on-failure
+        max_attempts: 3
+    networks:
+      - frontend
+      - backend
+#  server-file:
+#    image: ubuntu:latest
+#    container_name: myFileServer
 volumes:
 ###> doctrine/doctrine-bundle ###
   database_data:
 ###< doctrine/doctrine-bundle ###
+
+
+#  adminer:
+#    image: adminer:latest
+#    container_name: myadminer
+#    depends_on:
+#      - formation.zabbix-mysql
+#    deploy:
+#      restart_policy:
+#        condition: on-failure
+#        max_attempts: 3
+#    networks:
+#      - zabbix-network-back
+#      - zabbix-network-front
+#    environment:
+#      ADMINER_DEFAULT_DB_DRIVER: ${ADMINER_DEFAULT_DB_DRIVER}
+#      ADMINER_DEFAULT_SERVER: ${ADMINER_DEFAULT_SERVER}
+#      ADMINER_DEFAULT_DB_NAME: ${ADMINER_DEFAULT_DB_NAME}
+#      ADMINER_PLUGINS: dump-zip dump-bz2 dump-date
+#      ADMINER_DESIGN: galkaev # nette
+#    ports:
+#      - "55321:8080"
