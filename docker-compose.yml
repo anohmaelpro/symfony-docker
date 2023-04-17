@@ -42,14 +42,19 @@ services:
     networks:
       - frontend
       - backend
-#  server-file:
-#    image: ubuntu:latest
-#    container_name: myFileServer
+  hostingFile:
+    container_name: myHostingFile
+    image: alpine
+    command: tail -f /dev/null
+    volumes:
+      - type: bind
+        source: ./public/myDocuments
+        target: /myHostDocument
 volumes:
 ###> doctrine/doctrine-bundle ###
   database_data:
 ###< doctrine/doctrine-bundle ###
-
+# TODO:  changer le path du container hostfile; verifier avec filezilla qu'on accede bien au donner au volume; mettre a jour le front pour rendre tout fonctionnel avec un systeme d'uploead depuis un front twig
 
 #  adminer:
 #    image: adminer:latest
