@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="90a712e9-c7d1-443d-b133-3e6fcc6b9ee0" name="Changes" comment="docker-compose.yml file updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UplaodFileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UploadFileController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/uplaod_file/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/upload_file/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,6 +169,11 @@
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.rainbow.brackets",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -245,7 +252,7 @@
       <workItem from="1681299913168" duration="187000" />
       <workItem from="1681300120098" duration="9745000" />
       <workItem from="1681329671979" duration="486000" />
-      <workItem from="1681734245838" duration="10449000" />
+      <workItem from="1681734245838" duration="12494000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose.yml and .env files updated, and works properly">
       <created>1681741356114</created>
@@ -268,7 +275,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681745975135</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="docker-compose.yml file updated">
+      <created>1681748356731</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681748356731</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
