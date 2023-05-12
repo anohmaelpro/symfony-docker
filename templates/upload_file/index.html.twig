@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello UplaodFileController!{% endblock %}
+{% block title %}Hello UploadFileController!{% endblock %}
 
 {% block body %}
 <style>
@@ -10,11 +10,8 @@
 
 <div class="example-wrapper">
     
-    <div>
-        <label for="formFile" class="form-label">Upload File</label>
-        <input class="form-control" type="file" id="formFile" multiple>
-    </div>
+    {{ form(formFile) }}
     
-    {{ form(form-file) }}
+    
 </div>
 {% endblock %}
