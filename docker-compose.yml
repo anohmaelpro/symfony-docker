@@ -1,7 +1,8 @@
-version: '3.7'
+version: '3.8'
 networks:
   frontend:
     name: frontend
+    internal: false
     external: true
   backend:
     name: backend
