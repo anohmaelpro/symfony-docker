@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90a712e9-c7d1-443d-b133-3e6fcc6b9ee0" name="Changes" comment="docker-compose.yml file updated">
+    <list default="true" id="90a712e9-c7d1-443d-b133-3e6fcc6b9ee0" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.local" beforeDir="false" afterPath="$PROJECT_DIR$/.env.local" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.override.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/UploadFileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UploadFileController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/FileType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/MyFileType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/upload_file/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/upload_file/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20230417125118.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,27 +166,22 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;RESTKit.sync&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.rainbow.brackets&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
-    ]
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\maanoh\MyWorkspace\my_symfony_docker\public\myDocuments" />
       <recent name="C:\Users\maanoh\MyWorkspace\my_symfony_docker\public\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+  <component name="RunManager" selected="Docker.docker-compose.yml">
     <configuration name="phpunit.xml.dist" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
       <method v="2" />
@@ -198,7 +194,7 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
           <option name="envFilePath" value="" />
@@ -207,14 +203,10 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.hostingFile: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
-          <option name="services">
-            <list>
-              <option value="hostingFile" />
-            </list>
-          </option>
+          <option name="envFilePath" value="" />
           <option name="sourceFilePath" value="docker-compose.yml" />
         </settings>
       </deployment>
@@ -235,9 +227,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.docker-compose.yml.hostingFile: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml" />
         <item itemvalue="Docker.docker-compose.yml.pgadmin: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.override.yml: Compose Deployment" />
       </list>
     </recent_temporary>
@@ -254,40 +246,10 @@
       <workItem from="1681298343099" duration="360000" />
       <workItem from="1681299913168" duration="187000" />
       <workItem from="1681300120098" duration="9745000" />
-      <workItem from="1681329671979" duration="486000" />
-      <workItem from="1681734245838" duration="12494000" />
-      <workItem from="1683814854650" duration="3944000" />
-      <workItem from="1683879046591" duration="511000" />
+      <workItem from="1683884458629" duration="894000" />
+      <workItem from="1684146329993" duration="5042000" />
+      <workItem from="1684154350147" duration="1953000" />
     </task>
-    <task id="LOCAL-00001" summary="docker-compose.yml and .env files updated, and works properly">
-      <created>1681741356114</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1681741356114</updated>
-    </task>
-    <task id="LOCAL-00002" summary="update gitignore file">
-      <created>1681742644874</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1681742644874</updated>
-    </task>
-    <task id="LOCAL-00003" summary="docker-compose.yml file updated">
-      <created>1681745975135</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1681745975135</updated>
-    </task>
-    <task id="LOCAL-00004" summary="docker-compose.yml file updated">
-      <created>1681748356731</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1681748356731</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,11 +265,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="docker-compose.yml and .env files updated, and works properly" />
-    <MESSAGE value="update gitignore file" />
-    <MESSAGE value="docker-compose.yml file updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="docker-compose.yml file updated" />
   </component>
 </project>
