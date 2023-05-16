@@ -47,12 +47,11 @@ services:
     image: dbeaver/dbeaver:latest
     restart: always
     depends_on:
-      -   postgres
+      - postgres
     networks:
       - backend
     ports:
       - "55431:8080"
-
   hostingFile:
     container_name: myHostingFile
     image: alpine
