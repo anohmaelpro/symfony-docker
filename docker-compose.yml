@@ -2,21 +2,17 @@ version: '3.8'
 networks:
   frontend:
     name: frontend
-    internal: false
-    external: true
   backend:
     name: backend
-    internal: true
-    driver: bridge
 services:
 ###> doctrine/doctrine-bundle ###
   postgres:
-    image: postgres:${POSTGRES_VERSION:-14}-alpine
+    image: postgres:${POSTGRES_VERSION:-15}-alpine
     container_name: postgres
     ports:
       - "5432:5432"
-    networks:
-      - backend
+#    networks:
+#      - backend
     environment:
       POSTGRES_DB: ${POSTGRES_DB}
       # You should definitely change the password in production
@@ -40,18 +36,9 @@ services:
       restart_policy:
         condition: on-failure
         max_attempts: 3
-    networks:
-      - frontend
-      - backend
-  dbeaver:
-    image: dbeaver/dbeaver:latest
-    restart: always
-    depends_on:
-      - postgres
-    networks:
-      - backend
-    ports:
-      - "55431:8080"
+#    networks:
+#      - frontend
+#      - backend
   hostingFile:
     container_name: myHostingFile
     image: alpine
