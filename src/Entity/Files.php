@@ -14,7 +14,7 @@ class Files
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
-    private ?string $name = null;
+    private ?string $fileName = null;
 
     #[ORM\Column(length: 255)]
     private ?string $pathFile = null;
@@ -27,14 +27,14 @@ class Files
         return $this->id;
     }
 
-    public function getName(): ?string
+    public function getFileName(): ?string
     {
-        return $this->name;
+        return $this->fileName;
     }
 
-    public function setName(string $name): self
+    public function setFileName(string $fileName): self
     {
-        $this->name = $name;
+        $this->fileName = $fileName;
 
         return $this;
     }

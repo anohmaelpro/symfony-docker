@@ -9,9 +9,21 @@
 </style>
 
 <div class="example-wrapper">
-    
-    {{ form(formFile) }}
-    
+	
+	{% for label, messages in app.flashes(['success', 'warning', 'notice']) %}
+		{% for message in messages %}
+			<div class="flash-{{ label }}">
+				{{ message }}
+			</div>
+		{% endfor %}
+	{% endfor %}
+	
+	{{ form_start(formFile) }}
+		<input type="hidden" name="token" value="{{ csrf_token('form-token-item') }}"/>
+	
+          {{ form_row(formFile.fileName) }}
+	
+	{{ form_end(formFile) }}
     
 </div>
 {% endblock %}

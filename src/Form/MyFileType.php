@@ -15,10 +15,7 @@ class MyFileType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('name')
-            ->add('pathFile')
-            ->add('extensionFile')
-	       ->add('File', FileType::class)
+            ->add('file', FileType::class)
 	       ->add('save', SubmitType::class)
 	       ->add('reset', ResetType::class)
         ;
@@ -28,6 +25,16 @@ class MyFileType extends AbstractType
     {
         $resolver->setDefaults([
             'data_class' => Files::class,
+		   
+	        // enable/disable CSRF protection for this form
+	        'csrf_protection' => true,
+		   
+	        // the name of the hidden HTML field that stores the token
+	        'csrf_field_name' => '_token',
+	        
+	        // an arbitrary string used to generate the value of the token
+	        // using a different string for each form improves its security
+	        'csrf_token_id'   => 'task_item',
         ]);
     }
 }
