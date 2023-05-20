@@ -37,6 +37,8 @@ services:
       - type: bind
         source: ./public/myDocuments
         target: /myHostDocument
+    ports:
+      - "55431:22"
 volumes:
   database_data:
 

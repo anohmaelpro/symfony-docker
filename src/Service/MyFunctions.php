@@ -4,6 +4,7 @@ namespace App\Service;
 
 use App\Entity\Files;
 use Doctrine\ORM\EntityManagerInterface;
+use mysql_xdevapi\Exception;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use Symfony\Component\HttpFoundation\File\Exception\FileException;
 use Symfony\Component\HttpFoundation\File\File;
@@ -41,9 +42,9 @@ class MyFunctions
 		$fileExtension = $file->guessExtension();
 		
 		try{
-			$file->move($this->parameterBag->get('upload_file_directory'));
+			$file->move($this->parameterBag->get('upload_file_directory'), $fileName);
 		} catch (FileException $exception) {
-			return false ;
+			throw new Exception($exception->getMessage());
 		}
 		
 		$newFile->setFileName($fileName)

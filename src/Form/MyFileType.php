@@ -15,7 +15,7 @@ class MyFileType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('file', FileType::class)
+            ->add('fileName', FileType::class)
 	       ->add('save', SubmitType::class)
 	       ->add('reset', ResetType::class)
         ;
