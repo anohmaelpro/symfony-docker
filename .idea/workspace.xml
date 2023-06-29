@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="90a712e9-c7d1-443d-b133-3e6fcc6b9ee0" name="Changes" comment="docker-compose.yml environment variable updated">
-      <change beforePath="$PROJECT_DIR$/.env.local" beforeDir="false" afterPath="$PROJECT_DIR$/.env.local" afterDir="false" />
+    <list default="true" id="90a712e9-c7d1-443d-b133-3e6fcc6b9ee0" name="Changes" comment="uploading file functions is done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,10 +15,15 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -159,21 +164,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RESTKit.sync": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TF_FMT": "false",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RESTKit.sync&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TF_FMT&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Symfony/symfony-docker/src/Controller&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Symfony\symfony-docker\src\Service" />
+      <recent name="D:\Symfony\symfony-docker\src\Controller" />
       <recent name="C:\Users\maanoh\MyWorkspace\my_symfony_docker\public\images" />
     </key>
   </component>
@@ -245,7 +253,11 @@
       <workItem from="1683884458629" duration="894000" />
       <workItem from="1684146329993" duration="5042000" />
       <workItem from="1684154350147" duration="1953000" />
-      <workItem from="1684222954906" duration="1958000" />
+      <workItem from="1684222954906" duration="11443000" />
+      <workItem from="1684263638165" duration="2127000" />
+      <workItem from="1684327646133" duration="12116000" />
+      <workItem from="1684457655053" duration="6748000" />
+      <workItem from="1684535702781" duration="3335000" />
     </task>
     <task id="LOCAL-00001" summary="docker-compose.yml environment variable updated">
       <created>1684223064114</created>
@@ -261,7 +273,70 @@
       <option name="project" value="LOCAL" />
       <updated>1684224669721</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="docker-compose.yml environment variable updated">
+      <created>1684224923169</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684224923169</updated>
+    </task>
+    <task id="LOCAL-00004" summary="docker-compose.yml environment variable updated">
+      <created>1684225098730</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684225098730</updated>
+    </task>
+    <task id="LOCAL-00005" summary="docker-compose.yml server dbeaver added">
+      <created>1684244648563</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684244648563</updated>
+    </task>
+    <task id="LOCAL-00006" summary="docker-compose.yml server dbeaver added">
+      <created>1684246067487</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684246067487</updated>
+    </task>
+    <task id="LOCAL-00007" summary="docker-compose.yml server dbeaver added">
+      <created>1684246215741</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684246215741</updated>
+    </task>
+    <task id="LOCAL-00008" summary="docker-compose.yml server dbeaver added">
+      <created>1684328112679</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1684328112679</updated>
+    </task>
+    <task id="LOCAL-00009" summary="docker-compose.yml server dbeaver added and worked without networks">
+      <created>1684330452252</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684330452252</updated>
+    </task>
+    <task id="LOCAL-00010" summary="uploading file functions is done">
+      <created>1684461853634</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684461853634</updated>
+    </task>
+    <task id="LOCAL-00011" summary="uploading file functions is done">
+      <created>1684541150357</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684541150357</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +355,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="docker-compose.yml environment variable updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="docker-compose.yml environment variable updated" />
+    <MESSAGE value="docker-compose.yml server dbeaver added" />
+    <MESSAGE value="docker-compose.yml server dbeaver added and worked without networks" />
+    <MESSAGE value="uploading file functions is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="uploading file functions is done" />
   </component>
 </project>
